@@ -1,0 +1,72 @@
+{% load static %}
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title> F </title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+        <meta http-equiv="Pragma" content="no-cache" />
+        <meta http-equiv="Expires" content="0" />
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+        {% block meta %}
+      
+        {% endblock %}
+
+        <link rel="shortcut icon" type="image/png" href="{% static 'img/favicon/fav.png' %}"/>
+        <link rel="stylesheet" href="{% static 'css/bootstrap/bootstrap.min.css' %}">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+        <link rel="stylesheet" href="{% static 'css/bootstrap/bootstrap-select.css' %}">
+        <link rel="stylesheet" href="{% static 'css/base.css' %}">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      
+        <script src="https://use.fontawesome.com/f0f0f6086b.js"></script>
+        {% block css %}
+        {% endblock %}
+    </head>
+
+    <body>
+    <div class="row">
+        <div class="col col-xl-12 col-lg-12 col-md-12">
+            <div class="home_container">
+                <h5>F</h5>
+
+                {% comment %} <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navhome">
+                    <img alt="logo" height="80" width="90">
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                          <li class="nav-item dropdown">
+                            <a class="nav-link" href="#">Home</a>
+                          </li>
+                          <li class="nav-item dropdown">
+                            <a class="nav-link" href="#">Add Post</a>
+                          </li>
+                          <li class="nav-item dropdown">
+                            <a class="nav-link" href="#">Profile</a>
+                          </li>
+                        </ul>
+                    </div>
+                </nav> {% endcomment %}
+                <div class="container">
+                  <div class="row" id="inter">
+                    <div class="col-sm">
+                     <button> &#8469; </button>
+                    </div>
+                    <div class="col-sm"> 
+                      <i class="fa fa-home" style="font-size: 36px;"></i>
+                    </div>
+                    <div class="col-sm">
+                      <i class='far fa-user-circle' style='font-size:36px'></i>
+                    </div>
+                  </div>
+                </div>
+                {% block content %}
+                {% endblock %}
+            </div>
+        </div>
+    </div>
+
+    </body>
+</html>
