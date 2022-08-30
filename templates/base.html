@@ -31,34 +31,21 @@
     <div class="row">
         <div class="col col-xl-12 col-lg-12 col-md-12">
             <div class="home_container">
-                <h5>F</h5>
-
-                {% comment %} <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navhome">
-                    <img alt="logo" height="80" width="90">
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav mr-auto">
-                          <li class="nav-item dropdown">
-                            <a class="nav-link" href="#">Home</a>
-                          </li>
-                          <li class="nav-item dropdown">
-                            <a class="nav-link" href="#">Add Post</a>
-                          </li>
-                          <li class="nav-item dropdown">
-                            <a class="nav-link" href="#">Profile</a>
-                          </li>
-                        </ul>
-                    </div>
-                </nav> {% endcomment %}
+                <h5><marquee>***** ***** *****</marquee></h5>
                 <div class="container">
                   <div class="row" id="inter">
                     <div class="col-sm">
-                     <button> &#8469; </button>
+                      <div class="container_menu" onclick="myFunction(this)">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                      </div>
                     </div>
                     <div class="col-sm"> 
-                      <i class="fa fa-home" style="font-size: 36px;"></i>
+                        <i class="fa fa-home" id="home" style="font-size: 36px;"></i>
                     </div>
                     <div class="col-sm">
-                      <i class='far fa-user-circle' style='font-size:36px'></i>
+                      <i class='far fa-user-circle' id="userprof" style='font-size:36px'></i>
                     </div>
                   </div>
                 </div>
@@ -67,6 +54,9 @@
             </div>
         </div>
     </div>
-
     </body>
+
+    {% block js %}
+      <script src="{% static 'js/base.js' %}"></script>
+    {% endblock %}
 </html>
